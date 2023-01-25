@@ -1,0 +1,95 @@
+
+$clr-primary: #000000;
+$clr-secondary: #ffffff;
+$clr-accent: #FDCE60;
+
+
+$fs-heading: 7rem;
+$fs-subheading: 3.5rem;
+$fs-list: 3rem;
+
+:root{
+    text-rendering: auto;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Pinyon-Script';
+    src: url("../assets/fonts/PinyonScript.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas-Neue';
+    src: url("../assets/fonts/BebasNeue.ttf");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Bebas-Neue', sans-serif;
+    font-size: 16px;
+    color: $clr-secondary;
+    background-color: $clr-primary;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url("../assets/images/mask.png");
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    font-size: 1rem;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: 'Pinyon-Script';
+    font-size: $fs-heading;
+    color: $clr-accent;
+    text-align: center;
+    filter: saturate(1.2);
+    line-height: 1;
+}
+
+h2{
+    font-size: $fs-subheading;
+    text-align: center;
+}
+
+.hero-grid{
+    display: grid;
+    align-items: center;
+    // border: 1px solid $clr-accent;
+    margin-block: 8rem 7rem;
+}
+
+.programm-item{
+    margin-top: 1rem;
+    h3{
+        font-size: $fs-list;
+        line-height: 1;
+        text-align: center;
+        color: $clr-accent;
+        letter-spacing: 1px;
+    }
+    p{
+        text-align: center;
+        margin-block: 0rem 0rem;
+        font-size: 1.2rem;
+    }
+    &:not(:last-of-type)::after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 50px;
+        background-color: $clr-secondary;
+        opacity: 50%;
+        margin-block: 1rem 0rem;
+        left:  50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+}
