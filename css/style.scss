@@ -38,11 +38,6 @@ body{
     background-color: $clr-primary;
     max-width: 100%;
     overflow-x: hidden;
-    background-image: url("../assets/images/mask.png");
-    background-repeat: no-repeat;
-    background-position: 100% 60%;
-    font-size: 1rem;
-    background-attachment: fixed;
 }
 
 h1{
@@ -108,4 +103,13 @@ h2{
         object-fit: contain;
         border-radius: 3px;
     }
+}
+
+.bg-image{
+    position: fixed;
+    left: 50%;
+    top: 60%;	
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    min-width: 25rem;
 }
