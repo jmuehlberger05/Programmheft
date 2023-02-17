@@ -19,13 +19,17 @@ $fs-list: 3rem;
 
 @font-face {
     font-family: 'Pinyon-Script';
-    src: url("../assets/fonts/PinyonScript.ttf");
+    src: url("../assets/fonts/PinyonScript.woff2") format("woff2"),
+        url("../assets/fonts/PinyonScript.woff") format("woff"),
+        url("../assets/fonts/PinyonScript.ttf") format("truetype");
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Bebas-Neue';
-    src: url("../assets/fonts/BebasNeue.ttf");
+    src: url("../assets/fonts/BebasNeue.woff2") format("woff2"),
+        url("../assets/fonts/BebasNeue.woff") format("woff"),
+        url("../assets/fonts/BebasNeue.ttf") format("truetype");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
